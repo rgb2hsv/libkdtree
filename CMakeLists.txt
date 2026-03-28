@@ -13,7 +13,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_library(libkdtree INTERFACE)
 add_library(libkdtree::libkdtree ALIAS libkdtree)
 target_include_directories(libkdtree INTERFACE
-    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>")
 
 # -----------------------------------------------------------------------------
 # GoogleTest (FetchContent)

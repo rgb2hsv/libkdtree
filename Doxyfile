@@ -10,12 +10,12 @@ GENERATE_LATEX         = NO
 HTML_OUTPUT            = html
 
 INPUT                  = \
-  kdtree.hpp \
-  node.hpp \
-  iterator.hpp \
-  region.hpp \
-  function.hpp \
-  allocator.hpp
+  src/kdtree.hpp \
+  src/node.hpp \
+  src/iterator.hpp \
+  src/region.hpp \
+  src/function.hpp \
+  src/allocator.hpp
 FILE_PATTERNS          =
 RECURSIVE              = NO
 FULL_PATH_NAMES        = NO
