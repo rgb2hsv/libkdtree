@@ -1,4 +1,4 @@
-# libkdtree
+# libkdtree++
 
 Header-only **k-dimensional tree** for C++20: spatial ordering, nearest-neighbor search, and axis-aligned range queries. This tree is derived from **libkdtree++** (Martin F. Krafft, Sylvain Bougerel, Paul Harris) with a modernized API and internals.
 
