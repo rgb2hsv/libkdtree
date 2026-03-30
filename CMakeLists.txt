@@ -43,6 +43,9 @@ if(LIBKDTREE_BUILD_TESTS)
         GTest::gtest_main)
     target_compile_features(libkdtree_tests PRIVATE cxx_std_20)
 
+    # POST_BUILD discovery runs the exe from MSBuild without the gtest DLL dir on PATH
+    # (shared CRT + gtest DLLs); PRE_TEST defers discovery to ctest when env is set up.
     gtest_discover_tests(libkdtree_tests
+        DISCOVERY_MODE PRE_TEST
         PROPERTIES LABELS "libkdtree")
 endif()
